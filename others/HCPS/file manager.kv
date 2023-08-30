@@ -1,0 +1,17 @@
+<MyLayout>
+	BoxLayout:
+		orientation: "vertical"
+		size: root.width, root.height
+	
+		
+		MDScreen:
+
+			MDToolbar:
+				title: 'MDFileManager'
+				pos_hint: {"top": 1}
+
+			MDRoundFlatIconButton:
+				text: 'Open Image'
+				icon: 'folder'
+				pos_hint: {'center_x': .5, 'center_y': .5}
+				on_release: app.file_manager_open()
